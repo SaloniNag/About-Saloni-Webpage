@@ -8,29 +8,28 @@ body {
     font-family: 'Lato', sans-serif;
     background: #ffb6c1; 
 }
-table, th, td {  
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
-table{
-	width: 100%;
-	}
-th{
-height: 50px;
-width: 75px;
-font-family: 'Lato', sans-serif;
-font-size: 35px;
-text-align:center;
-color:black;
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
 }
-	
-td{
-	height: 50px;
-	width: 100px;
-font-family: 'Lato', sans-serif;
-font-size: 20px;
-text-align:center;
-color:black;
-	}	
-	
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
 .overlay {
     height: 100%;
     width: 0;
@@ -101,64 +100,32 @@ color:black;
 </div>
 
 <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
-<table>
-<tr>
-	<th> 
-		University of Illinois at Urbana-Champign
-	</th>
-	<td>
-	     Class of 2021
-	     Major: Mechanical Engineering 
-	     Minor: Computer Science
-	</td>
-</tr>
-<tr>
-	<th> 
-		Metea Valley High School 
-	</th>
-	<td>
-		<p1>Class of 2017</p1>
-		<p2>GPA: 4.4/4.0</p2>
-            <div><p3>In high school, I took many challenging classes in order to prepare me for the rigor of college courses. All fours years of high school 
-		I have taken Project Lead the Way, PLTW, engineering classes. In these classes I learned about engineering concepts such as: 3D 
-		design, robotics, electronics, and the design process. In my final PLTW capstone course, I designed and produced an device to help students control their ADHD while in school.
-		During my high school career, I also took 4 years of Spanish. Below is a list of m
-		of classes I have taken in high school. 
-		    </p3></div>
-		
-		<div>Project Lead The Way: 
-		- Introduction to Engineering Design 
-		- Principles of Engineering
-		- Digital Electronics 
-		- Engineering Design and Development
-		</div>
-		
-		<div>Spanish Levels 1-4</div>
-		
-		<div>Science:
-		Honors Biology 
-		Honors Chemistry
-		Honors Physics 
-		AP Chemistry - 4
-		</div>
-		
-		<div>Math:
-		Honors Geometry 
-		Honors Algebra 2 Trig
-		Honors Pre-Calc
-		AP Calculus BC - 4
-		AP Computer Science - 5
-		</div>
-		
-		<div>Social Studies:
-		AP Psychology - 5
-		</div>
-	</td> 
-	</tr>
-	</table>
+<table id="customers">
+  <tr>
+    <th>Institution</th>
+    <th>Graduation Year</th>
+    <th>Courses</th>
+  </tr>
+  <tr>
+    <td>University of Illinois at Urbana-Champign </td>
+    <td>2021</td>
+    <td>Major: Mechanical Engineering
+    </br>Minor: Computer Science</td>
+  </tr>
+  <tr>
+    <td>Metea Valley High School </td>
+    <td>2017</td>
+    <td>&nbsp &nbsp In high school, I have taken many challenging classes in order to prepare me for the rigor of college courses. All fours years of high school I have taken Project Lead the Way, PLTW, engineering classes. In these classes I learned about engineering concepts such as: 3D design, robotics, electronics, and the design process. In my final PLTW capstone course, I designed and produced an device to help students control their ADHD while in school. During my high school career, I also took 4 years of Spanish, English, and Social Studies. Below is a list of the classes I have taken in high school.
+    
+</br></br>Project Lead The Way: </br>- Introduction to Engineering Design </br>- Principles of Engineering </br>- Digital Electronics </br>- Engineering Design and Development
+</br></br>Spanish Levels 1-4
+</br></br>Science: </br>- Honors Biology </br>- Honors Chemistry </br>- Honors Physics </br>- AP Chemistry: 4
+</br></br>Math: </br>- Honors Geometry </br>- Honors Algebra 2 Trig </br>- Honors Pre-Calc </br> - AP Calculus BC: 4 </br>- AP Computer Science: 5
+</br></br>Social Studies: </br>- AP Psychology: 5</td>
+  </tr>
+  
+</table>
 
-	
-	
 	
 <script>
 function openNav() {
