@@ -8,7 +8,28 @@ body {
     font-family: 'Lato', sans-serif;
     background: #ff80ff;
 }
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #803399;
+    color: white;
+}
 .overlay {
     height: 100%;
     width: 0;
@@ -77,10 +98,50 @@ body {
     <a href="skills_awards.html">Skills & Awards</a>
   </div>
 </div>
-
+<div> 
 <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
-<img src = "https://photos.app.goo.gl/OKlKbrymtMZXubOE2" alt = "You should see a picture"
-			height=400px width = 300px position:center>
+	</div> 
+	
+<img src = "https://drive.google.com/file/d/0B3uEH3gKv2cwSkNxTVR3TUtfWFk/view?usp=sharing" alt = "You should see a picture"
+
+     height=400px width = 300px position:center>
+	
+	<div> 
+		<table id="customers">
+  <tr>
+  	<th>Award</th>
+    <th>Description</th> 
+    <th>Date Recieved</th>
+    </tr>
+     <tr> 
+    <td> Metea Valley High School - Departmental Award from Technology and Engineering Department</td>
+    <td> Becasue of my success in the Technology and Engineering department at my High School, and the tremendous work I have done during all four years of high school. </td>
+    <td> May 2017 </td> 
+    </tr>
+    
+    <tr>
+    <td> ICAN Young Achievers Award</td>
+    <td> Award given by Indian-American to youth who are making a difference in their communities. </td>
+    <td> March 2017 </td> 
+    </tr> 
+    
+    <tr> 
+    <td> Nation Center For Women In Information Technology (NCWIT) - Aspirations in Computing Award </td>
+    <td> I recieved this award because of my efforts in teaching kids how to code. </td>
+    <td> May 2017 </td>
+    </tr>
+    
+    <tr> 
+    <td> Indian Prairie Scholar's Award </td> 
+    <td> Award given by the Indian Prairie school district to students who have achieved a cumulative GPA about 3.6 and an ACT score of above 30.</td>
+    <td> February 2017 </td>
+    </tr>
+    
+   
+    
+</table>
+	</div> 
+	
 	
 <script>
 function openNav() {
